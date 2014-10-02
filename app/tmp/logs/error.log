@@ -1,0 +1,142 @@
+2014-10-02 12:47:20 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test/cakephpTest/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/test/cakephpTest/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#3 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#4 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#5 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#6 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/test/cakephpTest/app/View/Users/login.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/test/cakephpTest/lib/Cake/View/View.php(929): include('/var/www/test/c...')
+#10 /var/www/test/cakephpTest/lib/Cake/View/View.php(891): View->_evaluate('/var/www/test/c...', Array)
+#11 /var/www/test/cakephpTest/lib/Cake/View/View.php(462): View->_render('/var/www/test/c...')
+#12 /var/www/test/cakephpTest/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/test/cakephpTest/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-02 12:48:10 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test/cakephpTest/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/test/cakephpTest/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#3 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#4 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#5 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#6 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/test/cakephpTest/app/View/Users/login.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/test/cakephpTest/lib/Cake/View/View.php(929): include('/var/www/test/c...')
+#10 /var/www/test/cakephpTest/lib/Cake/View/View.php(891): View->_evaluate('/var/www/test/c...', Array)
+#11 /var/www/test/cakephpTest/lib/Cake/View/View.php(462): View->_render('/var/www/test/c...')
+#12 /var/www/test/cakephpTest/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/test/cakephpTest/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-02 12:52:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1049] Unknown database \'cakephp\'',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test/cakephpTest/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/test/cakephpTest/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#3 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#4 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#5 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#6 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/test/cakephpTest/app/View/Users/login.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/test/cakephpTest/lib/Cake/View/View.php(929): include('/var/www/test/c...')
+#10 /var/www/test/cakephpTest/lib/Cake/View/View.php(891): View->_evaluate('/var/www/test/c...', Array)
+#11 /var/www/test/cakephpTest/lib/Cake/View/View.php(462): View->_render('/var/www/test/c...')
+#12 /var/www/test/cakephpTest/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/test/cakephpTest/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-02 12:52:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1049] Unknown database \'cakephp\'',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test/cakephpTest/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/test/cakephpTest/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#3 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#4 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#5 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#6 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/test/cakephpTest/app/View/Users/login.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/test/cakephpTest/lib/Cake/View/View.php(929): include('/var/www/test/c...')
+#10 /var/www/test/cakephpTest/lib/Cake/View/View.php(891): View->_evaluate('/var/www/test/c...', Array)
+#11 /var/www/test/cakephpTest/lib/Cake/View/View.php(462): View->_render('/var/www/test/c...')
+#12 /var/www/test/cakephpTest/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/test/cakephpTest/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-10-02 12:52:53 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#1 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#2 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#3 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/test/cakephpTest/app/View/Users/login.ctp(4): FormHelper->create('User', Array)
+#5 /var/www/test/cakephpTest/lib/Cake/View/View.php(929): include('/var/www/test/c...')
+#6 /var/www/test/cakephpTest/lib/Cake/View/View.php(891): View->_evaluate('/var/www/test/c...', Array)
+#7 /var/www/test/cakephpTest/lib/Cake/View/View.php(462): View->_render('/var/www/test/c...')
+#8 /var/www/test/cakephpTest/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#9 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#10 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/test/cakephpTest/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-02 12:52:54 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(3310): Model->setSource('users')
+#1 /var/www/test/cakephpTest/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#2 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#3 /var/www/test/cakephpTest/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/test/cakephpTest/app/View/Users/login.ctp(4): FormHelper->create('User', Array)
+#5 /var/www/test/cakephpTest/lib/Cake/View/View.php(929): include('/var/www/test/c...')
+#6 /var/www/test/cakephpTest/lib/Cake/View/View.php(891): View->_evaluate('/var/www/test/c...', Array)
+#7 /var/www/test/cakephpTest/lib/Cake/View/View.php(462): View->_render('/var/www/test/c...')
+#8 /var/www/test/cakephpTest/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#9 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#10 /var/www/test/cakephpTest/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/test/cakephpTest/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
